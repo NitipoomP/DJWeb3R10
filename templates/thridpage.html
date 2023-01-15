@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="bg-light text-primary">
+    <h1 class="bg-danger text-info"> Welcome to Thrid Page  </h1>
+    <h2 class="text-danger">My First Love   </h2>
+    <table class="table table-warning">
+        <tr>
+            <td><img src="{% static 'images/p2.png' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/p2.png' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/p2.png' %}"width="200px"height="200px"></td>
+            <td><img src="{% static 'images/p2.png' %}"width="200px"height="200px"></td>
+        </tr>
+    </table>
+
+</div>
+
+    <p class="bg-white text-warning text-center ">
+          SAWATDEE JAAAA
+    </p><br>
+    <img src="{% static 'images/p1.png'%}" width="500" height="200"
+         class='img-thumbnail'><br>
+     Other :
+    <ul type="square">
+        <li> ul1 </li>
+        <li> ul2 </li>
+        <li> A3 </li>
+        <li> A4 </li>
+    </ul>
+<br>
+    Other :
+    <ol type="i">
+        <li> olก </li>
+        <li> olข </li>
+        <li> olค </li>
+        <li> olง </li>
+    </ol>
+<br>
+    <a href="/firstweb">Go to  (1) First Web</a> <br>
+    <a href="/secondpage">Go to  (2) Second Page</a> <br>
+    <a href="http://www.google.com" target="_blank">
+        <img src="{% static 'images/p.2.png' %}" width="150px" height="50px"> <br>
+    </a>
+
+{% endblock %}
+
+
+
+
+
+
+
+
