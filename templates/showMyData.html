@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-2"></div>
+         <div class="col-lg-8">
+             <h1 class="text-center text-danger">My Information</h1>
+             <H2 class="text-center text-primary">I'm{{ name }} {{ surname }}</H2>
+             <table class="table table-striped table-hover table-info">
+                 <tr>
+                     <td>name </td> <td> {{ name }} </td>
+                 </tr>
+                    <td>surname </td> <td> {{ surname }} </td>
+                 </tr>
+                    <td>gender </td> <td> {{ gender }} </td>
+                 </tr>
+                    <td>status </td> <td> {{ status }} </td>
+                 </tr>
+                    <td>work </td> <td> {{ work }} </td>
+                 </tr>
+                    <td>education </td> <td> {{ education }} </td>
+                 </tr>
+             </table>
+         </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="text-center"></div>
+    <a href="{% url 'firstWeb' %}" class="btn-primary"></a>
+                <i class="fas fa-home"></i>Home
+{% endblock %}

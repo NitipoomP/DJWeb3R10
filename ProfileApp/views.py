@@ -13,3 +13,15 @@ def secondpage (request):
 
 def thridpage (request):
     return render(request,'thridpage.html')
+
+def showMyData (request):
+    name = "Ntitpoom"
+    surname = "Maharhong"
+    gender = "Male"
+    status = "นักศึกษา"
+    work = "มอราช"
+    education = "ราชมงคลอีสานวิทยาเขตขอนแก่น"
+    return render(request, 'showMyData.html',
+    {{'name':name, 'surname':surname, 'gender':gender, 'status':status,
+      'work':work, 'education':education}}
+                  )
