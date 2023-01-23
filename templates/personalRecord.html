@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class = "text-xl-center">
+
+
+    <div class="text-warning"><h1>ประวัติส่วนตัวของผม</h1> </div>
+
+
+    <img src="{% static 'images/image01.jpg'%}" width="350" height="400"
+         class='rounded-circle'><br>
+
+
+    <div class="text-white"><h3>ชื่อ : นายนิติภูมิ มหาหงษ์ ชื่อเล่น : ฟิวส์</h3> </div>
+    <div class="text-white"><h3>วันเกิด : 26/11/2001 อายุ : 21 ปี 2 เดือน</h3> </div>
+    <div class="text-white"><h3>งานอิดเรก : เล่นเกม ทำอาหาร ฟังเพลง </h3> </div>
+    <div class="text-white"><h3>สัญชาติ : ไทย เชื้อชาติ : ไทย ศาสนา : พุทธ</h3> </div>
+    <div class="text-white"><h3>ลักษณะนิสัย : พูดตรงๆ ไม่ชอบคนลับหลัง ตัดสินใจเด็ดขาด </h3> </div>
+    <div class="text-white"><h3>โทรศัพท์ : 095-9309378 Email : nitipoomahahong@gamil.com </h3> </div>
+
+
+    <br><br>
+     <a href="{% url 'firstWeb' %}" class="btn btn-dark">
+          <i class="fas fa-home"></i>หน้าแรก</a>
+     <a href="{% url 'personalRecord' %}" class="btn btn-warning">
+         <i class="fas fa-book-user"></i>ประวัติส่วนตัว</a>
+     <a href="{% url 'secondpage' %}" class="btn btn-dark">
+         <i class="fas fa-school"></i>ประวัติการศึกษา</a>
+     <a href="{% url 'thridpage' %}" class="btn btn-warning">
+        <i class="far fa-gamepad-alt"></i>สิ่งที่สนใจ</a>
+     <a href="{% url 'productsForSale' %}" class="btn btn-dark">
+         <i class="fas fa-shopping-basket"></i>สินค้าที่ขาย</a>
+     <a href="{% url 'roleModel' %}" class="btn btn-warning">บุคคลต้นแบบ</a>
+    <br>
+    <br><br><br><br>
+    </div>
+
+{% endblock %}

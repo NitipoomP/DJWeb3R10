@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="text-xl-center">
+    <div class="text-warning"><h1>สินค้าที่นำมาขาย</h1> </div>
+    <div class="text-warning"><h2>Products for sale</h2></div>
+    </div>
+
+
+    <div class="container">
+        <div class="text-xl-center">
+        <img src="{% static 'images/MM01.jpg'%}" width="450" height="450"
+         class='rounded'><br>
+        </div>
+        <div class="text-white">
+        <h1>Bewell Semi-vertical Ergonomic mouse</h1>
+        <div class="text-warning">
+            <H3>ราคา 799 บาท</H3>
+        </div>
+            <button data-bs-toggle="collapse" data-bs-target="#demo">คำอธิบาย</button>
+
+            <div id="demo" class="collapse">
+                เมาส์ออกแบบมาเป็น Semi-Vertical Ergonomic Mouse ลักษณะกึ่งแนวตั้ง เพื่อสุขภาพของข้อมือที่ดี
+                รองรับการเชื่อมต่อผ่านสัญญาณ Wireless 2.4 GHz
+                สามารถเชื่อมต่อได้ไกลสูงสุด 10 เมตร
+                รองรับการปรับ DPI ได้ 6 ระดับ คือ 800 DPI, 1200 DPI, 1600 DPI, 2400 DPI, 3600 DPI และ 4000 DPI
+                มาพร้อมปุ่ม Back & Forward ช่วยลดการขยับข้อมือ ป้องกันอาการปวดของกล้ามเนื้อ
+                มีไร RGB ถึง 7 สี
+                สามารถชาร์จแบตเตอรี่ได้ผ่านพอร์ต USB-C มีไฟบอกสถานะการชาร์จ
+                แบตเตอรี่ใช้งานได้ยาวนานถึง 72 ชั่วโมง ต่อการชาร์จ 1 ครั้ง
+                รับประกัน 12 เดือน
+            </div>
+        </div>
+        <div class="text-xl-center">
+        <div class="container mt-3">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    สั่งซื้อสินค้า
+  </button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">ขออภัยสินค้าชนิดนี้หมดแล้ว</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        โปรดรอสินค้าปรมาณ 2-3 วัน....
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+        </div>
+        </div>
+
+     <div class="container">
+        <div class="text-xl-center">
+        <img src="{% static 'images/MM02.jpg'%}" width="450" height="450"
+         class='rounded'><br>
+        </div>
+        <div class="text-white">
+        <h1>Nubwo X55 Arcadia Wireless & Wired Macro</h1>
+        <div class="text-warning">
+            <H3>ราคา 759 บาท</H3>
+        </div>
+            <button data-bs-toggle="collapse" data-bs-target="#demo">คำอธิบาย</button>
+
+            <div id="demo" class="collapse">
+                รองรับการเชื่อมต่อทั้งแบบใช้สาย USB-C to USB-A และสัญญาณ Wireless 2.4 GHz
+                สามารถเชื่อมต่อได้ไกลถึง 10 เมตร
+                Nano Receiver มีความเร็วในการส่งข้อมูลถึง 1000Hz
+                Huano Switch เซ็นเซอร์ PIXART 3325
+                Polling Rate ปรับได้สูงสุด 1000 Hz ผ่าน Software
+                รองรับการชาร์จแบตเตอรี่ผ่านทางพอร์ต USB-C
+                สามารถใช้งานได้ยาวนาน 38 ชั่วโมง
+                มีปุ่มฟังก์ชัน ปรับโหมดการใช้งานได้ 3 โหมด คือ
+                โหมดเชื่อมสาย สามารถใช้งานไฟ RGB ได้อย่างเต็มรูปแบบ
+                โหมดไร้สาย (Wireless Power Saving Mode) จะมีไฟ RGB แสดงเฉพาะส่วนของโลโก้ และ Scroll Mouse
+                โหมดไร้สาย ใช้งานไฟ RGB ได้ 9 รูปแบบ
+                รับประกัน 2 ปี
+            </div>
+        </div>
+        <div class="text-xl-center">
+        <div class="container mt-3">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    สั่งซื้อสินค้า
+  </button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">ขออภัยสินค้าชนิดนี้หมดแล้ว</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        โปรดรอสินค้าปรมาณ 2-3 วัน....
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+        </div>
+        </div>
+
+<div class="text-xl-center">
+    <br><br>
+     <a href="{% url 'firstWeb' %}" class="btn btn-dark">
+          <i class="fas fa-home"></i>หน้าแรก</a>
+     <a href="{% url 'personalRecord' %}" class="btn btn-warning">
+         <i class="fas fa-book-user"></i>ประวัติส่วนตัว</a>
+     <a href="{% url 'secondpage' %}" class="btn btn-dark">
+         <i class="fas fa-school"></i>ประวัติการศึกษา</a>
+     <a href="{% url 'thridpage' %}" class="btn btn-warning">
+        <i class="far fa-gamepad-alt"></i>สิ่งที่สนใจ</a>
+     <a href="{% url 'productsForSale' %}" class="btn btn-dark">
+         <i class="fas fa-shopping-basket"></i>สินค้าที่ขาย</a>
+     <a href="{% url 'roleModel' %}" class="btn btn-warning">บุคคลต้นแบบ</a>
+    <br>
+    <br><br><br><br>
+</div>
+
+{% endblock %}
