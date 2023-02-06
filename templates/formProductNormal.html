@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+{% block content %}
+    <h1 class="text-danger text-center bg-white"> New Product Form (Normal)</h1>
+    <table class="table table-info">
+    <form action="/newProduct" method="post" class="form form-control">
+        <tr>
+        <td>Product ID</td>
+        <td>
+            <input type="text" name="id" size="15" maxlength="13" required >
+        </td>
+        </tr>
+
+        <tr>
+        <td>Product Name</td>
+        <td>
+            <input type="text" name="id" size="55" maxlength="50" required >
+        </td>
+        </tr>
+
+        <tr>
+        <td>Product Brand</td>
+        <td>
+            <input type="text" name="id" size="35" maxlength="30" required >
+        </td>
+        </tr>
+
+        <tr>
+        <td>Product Price</td>
+        <tr>
+            <input type="number" name="id" size="10" min="1.00" max="100000.00" required >
+        </tr>
+        </tr>
+
+        <tr>
+            <td>Made</td>
+        </tr>
+
+        <tr>
+        <td>Product Net</td>
+        <td>
+            <input type="number" name="id" size="10" min="0" max="1000" required >
+        </td>
+        </tr>
+
+
+
+    </form>
+    </table>
+{% endblock %}

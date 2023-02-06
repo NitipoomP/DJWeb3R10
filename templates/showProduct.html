@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+{% block content %}
+    <h2 class="text-danger text-center bg-white"> Our Product for Sale</h2>
+    <table class="table table-danger table-striped table-hover">
+        <tr>
+            <th>Product ID </th>
+            <th>Name </th>
+            <th>Brand </th>
+            <th>Price </th>
+            <th>Net </th>
+        </tr>
+    {% for product in products %}
+        <tr>
+            <td>{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.brand }}</td>
+            <td>{{ product.price | floatformat:2 }}</td>
+            <td>{{ product.net | floatformat:2}}</td>
+        </tr>
+
+    {% endfor %}
+    </table>
+    <a href="{% url 'firstWeb' %}" class="btn btn-primary">
+        <i class="fa fa-home"></i>
+        Home
+    </a>
+{% endblock %}

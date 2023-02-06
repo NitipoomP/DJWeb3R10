@@ -10,5 +10,14 @@ urlpatterns = [
     path('productsForSale', views.productsForSale, name="productsForSale"),
     path('roleModel', views.roleModel, name="roleModel"),
     path('showMyData', views.showMyData, name="showMyData"),
+    path('showProduct', views.showProduct, name="showProduct"),
+    path('listProduct', views.listProduct, name="listProduct"),
+    path('inputProduct', views.inputProduct, name="inputProduct"),
+
+    path('retrieveAllProduct', views.retrieveAllProduct, name="retrieveAllProduct"),
+    path('reteieveOneProduct/<pid>', views.reteieveOneProduct, name="reteieveOneProduct"),
+    path('createProduct', views.createProduct, name="createProduct"),
+    path('updateProduct/<pid>', views.updateProduct, name="updateProduct"),
+
 
 ]

@@ -77,11 +77,19 @@ WSGI_APPLICATION = 'DJWeb3R10.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dbdjweb3r10',
+        'USER': 'dbtstaff149',
+        'PASSWORD': '0821140858',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
 
 
 # Password validation

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+{% block content %}
+    <h1 class="text-danger text-center bg-white">All Product Information</h1>
+    <table class="table table-info">
+        <tr>
+            <th>รหัสสินค้า</th><th>ชื่อสินค้า</th><th>ยี้ห้อ</th>
+            <th>ราคาต่อหน่วย</th><th>คงเหลือ</th><th>ประเภท</th>
+            <th>
+                Manage
+                <a href="{% url 'createProduct' %}">
+                    <i class="fas fa-calendar"></i>
+                </a>
+        </tr>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.pid }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.brand }}</td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.net }}</td>
+                <td>{{ product.category.name }}</td>
+                <td>
+                    <a href="{% url 'reteieveOneProduct' product.pid %}">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="{% url 'updateProduct' product.pid %}">
+                        <i class="fas fa-pencil-alt"></i>
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+
+    </table>
+    <footer>
+     <div class="text-center">
+        <a href="{% url 'firstWeb' %}" class="btn btn-primary">
+            <i class="fas fa-home"></i> Home
+        </a>
+     </div>
+    </footer>
+
+{% endblock %}

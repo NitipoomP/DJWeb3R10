@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+{% block content %}
+    <h1 class="text-danger text-center bg-white">The Product Information</h1>
+    <h2 class="table table-info table-hover table-striped">
+        {{ product.pid }}:{{ product.name }}
+    </h2>
+    <table class="table table-info table-hover table-striped">
+        <tr>
+            <td>รหัสสินค้า</td>
+            <td>{{ product.pid }}</td>
+        </tr>
+        <tr>
+            <td>ชื่อสินค้า</td>
+            <td>{{ product.name }}</td>
+        </tr>
+        <tr>
+            <td>ยี่ห้อ</td>
+            <td>{{ product.brand }}</td>
+        </tr>
+        <tr>
+            <td>ราคาต่อหน่วย</td>
+            <td>{{ product.price }}</td>
+        </tr>
+        <tr>
+            <td>ประเภทสินค้า</td>
+            <td>{{ product.category.name }}</td>
+        </tr>
+    </table>
+    <div class="text-center">
+        <a href="{% url 'firstWeb' %}" class="btn btn-primary">
+            <i class="fas fa-home"></i> Home
+        </a>
+        <a onclick="history.back()" class="btn btn-primary">
+            <i class="fas fa-backward"></i> Back
+        </a>
+    </div>
+
+{% endblock %}

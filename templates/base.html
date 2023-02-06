@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Thrid Page</title>
+    <title>Page Mr.Nitipoom</title>
      <link type="text/css" rel="stylesheet" href="{% static 'stylesheets/bt-5.2.3-dist/css/bootstrap.css' %}">
     <script src="{% static 'stylesheets/bt-5.2.3-dist/js/bootstrap.js' %}"></script>
 </head>
@@ -24,6 +24,14 @@
         </div>
 {#        <div class="col-9 bg-secondary text-primary">#}
         <div class="col-lg-9 bg-white text-primary"style="background-image: url({% static 'images/BackG/BGNew.png' %})">
+
+            {% for messase in messases %}
+                <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>{{ message | safe }}</div>
+            {% endfor %}
+
             {% block content %}
             {% endblock %}
         </div>
